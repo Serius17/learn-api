@@ -21,33 +21,20 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+## Metode Pengembangan
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Pada pengembangan ini menggunakan Sercices Repository Pattern :
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Repository pattern adalah sebuah desain arsitektur pada aplikasi yang memisahkan kode yang berhubungan dengan basis data dan bisnis logic menjadi beberapa kelas atau interface yang terpisah. Repository pattern biasanya digunakan pada aplikasi yang kompleks atau besar dan memerlukan pengelolaan data yang lebih baik.
 
-## Laravel Sponsors
+Dalam konteks Laravel, Repository pattern biasanya digunakan untuk memisahkan kode yang berhubungan dengan basis data dan bisnis logic pada Model. Repository pattern ini digunakan untuk mengakses data dari basis data dan melakukan operasi CRUD (Create, Read, Update, Delete) pada data tersebut.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Services, pada dasarnya, adalah kelas atau interface yang berisi bisnis logic atau algoritma yang lebih kompleks. Services biasanya digunakan untuk mengelola logika bisnis pada aplikasi seperti pembuatan, pembaharuan, atau penghapusan data.
 
-### Premium Partners
+Ketika menggabungkan Repository pattern dan Services pada Laravel, Repository pattern dapat digunakan untuk mengakses data dari basis data dan Services dapat digunakan untuk mengelola bisnis logic pada aplikasi. Dalam hal ini, Repository pattern bertanggung jawab untuk mengambil data dari basis data dan Services bertanggung jawab untuk melakukan operasi bisnis pada data tersebut.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+Penggunaan Repository pattern dan Services pada Laravel memiliki keuntungan dalam memisahkan kode bisnis logic dan kode yang berhubungan dengan basis data, sehingga membuat kode menjadi lebih terorganisir dan mudah untuk dipelihara dan ditingkatkan. Selain itu, penggunaan Repository pattern dan Services juga mempermudah pengujian (testing) pada kode aplikasi karena dapat memisahkan antara pengujian pada kode bisnis logic dan pengujian pada kode yang berhubungan dengan basis data.
 
-## Contributing
 
 Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
